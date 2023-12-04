@@ -1,0 +1,111 @@
+.header {
+  font-size: 17px;
+}
+#nav-item {
+  &:hover {
+    color: $link-hover;
+  }
+}
+
+.container00 {
+  display: flex;
+  flex-direction: column;
+  &.container01 {
+    background-image: url(../../images/home/01.jpg);
+  }
+}
+.container00 {
+  &.container02 {
+    background-image: url(../../images/home/03.jpg);
+  }
+}
+
+.container00 {
+  &.container03 {
+    background-image: url(../../images/home/02.gif);
+  }
+}
+
+.container00 {
+  &.container04 {
+    background-image: url(../../images/home/04.jpg);
+  }
+}
+
+.titlePadding {
+  padding-top: 200px;
+  background-color: rgb(0, 0, 0, 0.5);
+  height: 70vh;
+  margin-top: 50px;
+  margin-bottom: 5rem;
+}
+.arrowDown1 {
+  width: 100px;
+  cursor: pointer;
+  padding-top: 14rem;
+}
+.short-Title {
+  width: 550px;
+  margin-bottom: -25px;
+  font-size: 3rem;
+}
+
+.medium-Title {
+  width: 650px;
+  margin-bottom: 25px;
+}
+
+#button {
+  padding: $padding-button;
+  border: 2.5px solid;
+  font-weight: 500;
+}
+
+.footer {
+  background-color: black;
+  height: 15vh;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: $link-hover;
+    }
+  }
+
+  .copyFernanda {
+    color: $copy-color;
+  }
+}
+
+// Media Querrys
+@media (max-width: 750px) {
+  .titlePadding {
+    padding-top: 250px;
+  }
+
+  .short-Title,
+  .medium-Title {
+    width: auto;
+    font-size: 2rem;
+  }
+
+  .arrowDown1 {
+    width: 100px;
+    cursor: pointer;
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .short-Title,
+  .medium-Title {
+    width: auto;
+    font-size: 1.6rem;
+  }
+}
